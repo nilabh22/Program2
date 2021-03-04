@@ -1,36 +1,33 @@
-#include<iostream.h>
+#include<iostream>
 #include<conio.h>
 #include<math.h>
+
+using namespace std;
+
 double power(double m,int n=2)
 {
 double t;
 t=pow(m,n);
 return t;
-  
 }
-
-void main()
+int main()
 {
-  
 double num,ans;
 int p;
-cout<<“Enter the number: \n”;
+cout<<"Enter the number: \n";
 cin>>num;
-cout<<“\n enter the power:”;
+cout<<"\n enter the power:";
 cin>>p;
 if(p==0)
-  
 {
-  
 ans=power(num);
-cout<<“\nPower of “<<num<<” is “<<ans<<endl;
+cout<<"\nPower of "<<num<<" is "<<ans<<endl;
 }
-
 else
-  
 {
 ans=power(num,p);
-cout<<“\nPower of “<<num<<” is “<<ans<<endl;
+cout<<"\nPower of "<<num<<" is "<<ans<<endl;
 }
 getch();
+return 0;
 }
